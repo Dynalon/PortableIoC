@@ -1,0 +1,11 @@
+*.userprefs
+#Ignore MonoDevelop Parser Information Database
+*.pidb
+#Ignore build output folders
+bin/
+test-results/
+obj/
+
+# OS annoying files
+.DS_Store
+*.mdb

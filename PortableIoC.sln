@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortableIoC", "PortableIoC\PortableIoC.csproj", "{7CDFDC4A-752A-445A-A344-53FD299B2C76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortableIoCTests", "PortableIoCTests\PortableIoCTests.csproj", "{2A3699F7-7CEB-4C44-9FCD-3B1057CECAC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A3699F7-7CEB-4C44-9FCD-3B1057CECAC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A3699F7-7CEB-4C44-9FCD-3B1057CECAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A3699F7-7CEB-4C44-9FCD-3B1057CECAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A3699F7-7CEB-4C44-9FCD-3B1057CECAC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CDFDC4A-752A-445A-A344-53FD299B2C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CDFDC4A-752A-445A-A344-53FD299B2C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CDFDC4A-752A-445A-A344-53FD299B2C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CDFDC4A-752A-445A-A344-53FD299B2C76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = PortableIoC\PortableIoC.csproj
+	EndGlobalSection
+EndGlobal

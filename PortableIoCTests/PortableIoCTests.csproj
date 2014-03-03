@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A3699F7-7CEB-4C44-9FCD-3B1057CECAC7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PortableIoCTests</RootNamespace>
+    <AssemblyName>PortableIoCTests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="nunit.framework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConcurrencyTests.cs" />
+    <Compile Include="IoCTests.cs" />
+    <Compile Include="TestHelpers\IBar.cs" />
+    <Compile Include="TestHelpers\IFoo.cs" />
+    <Compile Include="TestHelpers\SimpleBar.cs" />
+    <Compile Include="TestHelpers\SimpleFoo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="TestHelpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PortableIoC\PortableIoC.csproj">
+      <Project>{7CDFDC4A-752A-445A-A344-53FD299B2C76}</Project>
+      <Name>PortableIoC</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
